@@ -94,7 +94,18 @@ weight: 20},
 
 // ITERATION 2
 function selectRandom (arr) {
+    if (arr.length = 1) {
+        return arr[0];
+    } else {
     var mysteryCard = arr[Math.floor(Math.random() * arr.length)];
     return console.log(mysteryCard);
     }
+}
+
+function pickMystery () {
+    let suspect = selectRandom(suspectsArray);
+    let weapon = selectRandom(weaponsArray);
+    let room = selectRandom(roomsArray);
+    return suspect, weapon, room;
+}
 // ITERATION 3
